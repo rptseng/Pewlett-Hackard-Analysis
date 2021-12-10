@@ -35,3 +35,5 @@ GROUP BY title
 ORDER BY "Number of Mentors" DESC;
 
 From the result we can see there is nobody of the Manager position eligible to become a mentor, while there are two Managers eligible to retire. Pewlett-Hackard will need to come up with an arrangement to transition new employees to fill the Manager role if no mentors are available.
+
+![mentors_by_title](https://github.com/rptseng/Pewlett-Hackard-Analysis/blob/main/Data/mentors_by_title.PNG) ![retiring_by_title](https://github.com/rptseng/Pewlett-Hackard-Analysis/blob/main/Data/retiring_by%20title.PNG)
