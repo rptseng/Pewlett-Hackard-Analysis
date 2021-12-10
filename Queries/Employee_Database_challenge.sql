@@ -52,3 +52,14 @@ LEFT JOIN titles as t
 WHERE (de.to_date = '9999-01-01')
 AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY (e.emp_no);
+
+--Query to count total number of Pewlett Hackard employees
+SELECT COUNT (emp_no) as "Number of Total Employees"
+FROM employees;
+
+-- Query to determine number of eligible mentors by title
+SELECT COUNT(emp_no) as "Number of Mentors",
+    title
+FROM mentorship_eligibility
+GROUP BY title
+ORDER BY "Number of Mentors" DESC;
